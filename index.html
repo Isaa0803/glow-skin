@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#F3E8D5">
+  <title>Glow Skin | Skincare de Luxo</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#" aria-label="Glow Skin página inicial">
+      GLOW <span>SKIN</span>
+    </a>
+    <nav>
+      <a href="#inicio">Início</a>
+      <a href="#produtos">Coleção</a>
+      <a href="#sobre">Nossa essência</a>
+    </nav>
+    <button id="open-cart" class="cart-button">
+      Sacola <span id="cart-count">0</span>
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-content">
+        <p class="eyebrow">SKINCARE · BELEZA · RITUAL</p>
+        <h1>O luxo de cuidar<br>de você.</h1>
+        <p>
+          Descubra uma seleção especial de cuidados
+          para transformar sua rotina em um ritual.
+        </p>
+        <a class="primary-button" href="#produtos">
+          Descobrir a coleção
+        </a>
+      </div>
+      <div class="hero-art" role="img" aria-label="Ilustração decorativa de skincare">
+        <div class="sun"></div>
+        <div class="bottle bottle-one">
+          <span>GLOW<br>SKIN</span>
+        </div>
+        <div class="bottle bottle-two">
+          <span>GOLDEN<br>SERUM</span>
+        </div>
+        <div class="pedestal"></div>
+      </div>
+    </section>
+
+    <section class="intro" id="sobre">
+      <p class="eyebrow">BELEZA EM CADA DETALHE</p>
+      <h2>Seu momento. Seu cuidado.</h2>
+      <p>
+        Produtos selecionados para inspirar uma rotina
+        de autocuidado com elegância e simplicidade.
+      </p>
+    </section>
+
+    <section class="catalog" id="produtos">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">NOSSA SELEÇÃO</p>
+          <h2>Favoritos Glow Skin</h2>
+        </div>
+        <label>
+          <span class="sr-only">Filtrar produtos</span>
+          <select id="category-filter">
+            <option value="Todos">Todas as categorias</option>
+            <option value="Limpeza">Limpeza</option>
+            <option value="Sérum">Séruns</option>
+            <option value="Hidratante">Hidratantes</option>
+            <option value="Proteção solar">Proteção solar</option>
+          </select>
+        </label>
+      </div>
+
+      <div id="product-grid" class="product-grid"></div>
+    </section>
+
+    <section class="assistant-section">
+      <p class="eyebrow">UMA EXPERIÊNCIA PERSONALIZADA</p>
+      <h2>Precisa de ajuda para escolher?</h2>
+      <p>
+        Converse com nossa assistente virtual e descubra
+        as categorias que combinam com suas preferências.
+      </p>
+      <p class="assistant-hint">
+        Abra o chat Glow Skin no canto da página.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="logo" href="#inicio">GLOW <span>SKIN</span></a>
+    <p>Seu ritual de beleza, com um toque de luxo.</p>
+    <small>Projeto demonstrativo para fins de estudo.</small>
+  </footer>
+
+  <dialog id="cart-dialog" class="cart-dialog">
+    <div class="cart-heading">
+      <h2>Sua sacola</h2>
+      <button id="close-cart" class="close-button"
+        aria-label="Fechar sacola">×</button>
+    </div>
+    <div id="cart-items"></div>
+    <p class="cart-total">
+      Subtotal: <strong id="cart-total">R$ 0,00</strong>
+    </p>
+    <button id="checkout" class="primary-button full-width">
+      Simular pedido
+    </button>
+    <p class="demo-note">
+      Demonstração: nenhum pagamento será realizado.
+    </p>
+  </dialog>
+</body>
+</html>
